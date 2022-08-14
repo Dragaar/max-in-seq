@@ -3,15 +3,23 @@ import java.util.Scanner;
 
 public class FindMaxInSeq {
     public static int max() {
+        int numb = 1;
+        Scanner scanner = new Scanner(System.in);
+        int max = scanner.nextInt();
+        while(numb != 0)
+        {
 
-        // Put your code here
+            numb = scanner.nextInt();
 
-        return 0;
+            if(numb == 0) break;
+            if(numb > max) {max = numb;}
+
+        }
+        return max;
     }
 
     public static void main(String[] args) {
 
-        System.out.println("Test your code here!\n");
 
         // Get a result of your code
 
